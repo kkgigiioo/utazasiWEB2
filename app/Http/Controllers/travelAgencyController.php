@@ -8,6 +8,7 @@ class travelAgencyController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $travel =\App\Travels::orderBy('created_at','DESC')->get();
+        return view('welcome', ['travel' => $travel]);
     }
 }
