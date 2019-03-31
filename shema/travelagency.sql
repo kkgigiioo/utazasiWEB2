@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1:3306
--- Létrehozás ideje: 2019. Már 23. 20:33
+-- Létrehozás ideje: 2019. Már 31. 17:52
 -- Kiszolgáló verziója: 5.7.19
 -- PHP verzió: 7.3.3
 
@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `travelagency`
 --
-CREATE DATABASE IF NOT EXISTS `travelagency` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `travelagency`;
 
 -- --------------------------------------------------------
 
@@ -79,7 +77,15 @@ CREATE TABLE IF NOT EXISTS `travels` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- A tábla adatainak kiíratása `travels`
+--
+
+INSERT INTO `travels` (`id`, `country`, `city`, `content`, `description`, `startDate`, `price`, `maxNum`, `created_at`, `updated_at`) VALUES
+(1, 'Italy', 'Rome', '4 days Rome tour', 'This is a four days tour for Rome with accommodation, breakfast, hot dinner', '2019-06-12', 254, 24, '2019-03-31 10:53:33', '2019-03-31 10:53:33'),
+(2, 'Croatia', 'Makarska', '5 days tour for Makarska', 'Makarska tour for 5 days with dinner', '2019-08-02', 590, 8, '2019-03-31 11:35:26', '2019-03-31 11:35:26');
 
 -- --------------------------------------------------------
 
