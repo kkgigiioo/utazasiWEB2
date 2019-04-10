@@ -11,4 +11,12 @@ class travelAgencyController extends Controller
         $travel =\App\Travels::orderBy('created_at','DESC')->get();
         return view('welcome', ['travel' => $travel]);
     }
+
+    public function show($id)
+    {
+        $travel = \App\Travels::where('id', $id)->first();
+        $user = \App\User::where('travelID', $id)->count('email');
+
+        return view('travels', compact('travel'), ['user' => $user]);
+    }
 }

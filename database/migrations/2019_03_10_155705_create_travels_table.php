@@ -14,7 +14,7 @@ class CreateTravelsTable extends Migration
     public function up()
     {
         Schema::create('travels', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('country'); //country of travel
             $table->string('city'); //city of travel
             $table->string('content'); //travel content
