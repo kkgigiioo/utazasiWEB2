@@ -1,8 +1,8 @@
-@extends('layouts/app', ['siteTitle' => 'Home'])
+@extends('layout', ['siteTitle' => 'Home'])
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top:20%;">
             <div class="col-md-4">
                 <h1 class="display-4">Helló utazó</h1>
             </div>
