@@ -17,6 +17,13 @@
         <hr>
         <div class="row">
             <div class="col-8">
+                <h4>
+                    Price: {{ $travel->price }} EUR
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
                 <h3>
                     Description:
                 </h3>
