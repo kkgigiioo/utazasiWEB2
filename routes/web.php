@@ -14,6 +14,11 @@
 Route::get('/', 'travelAgencyController@index');
 Route::get('/travels/{id}', 'travelAgencyController@show');
 
+Route::get('/new', 'travelAgencyController@showNewTravel');
+Route::post('/new', 'travelAgencyController@store');
+
+Route::post('/travelSave/{id}', 'travelAgencyController@saveTravel');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
