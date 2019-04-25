@@ -17,12 +17,29 @@
         <hr>
         <div class="row">
             <div class="col-8">
+                <h4>
+                    Price: {{ $travel->price }} EUR
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
                 <h3>
                     Description:
                 </h3>
                 <p>{{ $travel->description }}</p>
             </div>
         </div>
+        <form action="/travelSave/{{ $travel->id }}" method="POST">
+            {{ csrf_field() }}
+            <div class="form-group row mb-0">
+                <div class="col-md-6 ">
+                    <button type="submit" class="btn btn-primary">
+                        Apply
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
 
 @endsection
