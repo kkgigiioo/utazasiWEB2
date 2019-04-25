@@ -17,12 +17,52 @@
         <hr>
         <div class="row">
             <div class="col-8">
+                <h4>
+                    Price: {{ $travel->price }} EUR
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
                 <h3>
                     Description:
                 </h3>
                 <p>{{ $travel->description }}</p>
             </div>
         </div>
+    @if(session()->has('success'))
+        <div class="alert alert-success" role="alert">
+            {{ session()->get('success') }}
+        </div>
+    @elseif(session()->has('cancel'))
+        <div class="alert alert-danger" role="alert">
+            {{ session()->get('cancel') }}
+        </div>
+    @endif
+
+    @if($travel->id != Auth::user()->travels_id)
+        <form method="POST" action="/travelSave/{{ $travel->id }}">
+            {{ csrf_field() }}
+            <div class="form-group row mb-0">
+                <div class="col-md-6 ">
+                    <button type="submit" class="btn btn-dark">
+                        Apply
+                    </button>
+                </div>
+            </div>
+        </form>
+    @else
+        <form method="POST" action="/travelResign/{{ $travel->id }}">
+            {{ csrf_field() }}
+            <div class="form-group row mb-0">
+                <div class="col-md-6 ">
+                    <button type="submit" class="btn btn-dark">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </form>
+    @endif
     </div>
 
 @endsection
