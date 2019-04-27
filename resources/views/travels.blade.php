@@ -17,12 +17,50 @@
         <hr>
         <div class="row">
             <div class="col-8">
+                <h4>
+                    Price: {{ $travel->price }} EUR
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
                 <h3>
                     Description:
                 </h3>
                 <p>{{ $travel->description }}</p>
             </div>
         </div>
+    @include('layouts._message')
+    
+    @if(Auth::user() != NULL)
+        @if($travel->id != Auth::user()->travels_id)
+            <form method="POST" action="/travelSave/{{ $travel->id }}">
+                {{ csrf_field() }}
+                <div class="form-group row mb-0">
+                    <div class="col-md-6 ">
+                        <button type="submit" class="btn btn-dark">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+            </form>
+        @else
+            <form method="POST" action="/travelResign/{{ $travel->id }}">
+                {{ csrf_field() }}
+                <div class="form-group row mb-0">
+                    <div class="col-md-6 ">
+                        <button type="submit" class="btn btn-dark">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </form>
+        @endif
+    @else
+        <div class="alert alert-warning" role="alert">
+            Please <a href="{{ route('login') }}">sign in</a> or <a href="{{ route('register') }}">registrate</a>!
+        </div>
+    @endif
     </div>
 
 @endsection
