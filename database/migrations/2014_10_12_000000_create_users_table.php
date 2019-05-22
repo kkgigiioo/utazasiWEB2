@@ -21,8 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->string('phoneNumber', 15)->nullable(); //group of users (example: admin, generalUser)
-            $table->unsignedInteger('travelID');
+            $table->string('phoneNumber', 15)->nullable();
+            $table->unsignedInteger('travels_id');
 
         });
     }
