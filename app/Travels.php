@@ -3,11 +3,16 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class Travels extends Model
 {
-    public function user()
+    protected $fillable = [
+      'country', 'city', 'content', 'description', 'startDate', 'endDate', 'price', 'maxNum',
+    ];
+
+    public function apply()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(Auth::user());
     }
 }

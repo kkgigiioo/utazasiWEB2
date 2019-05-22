@@ -20,6 +20,7 @@ class CreateTravelsTable extends Migration
             $table->string('content'); //travel content
             $table->text('description'); //travel description
             $table->date('startDate'); //Departures date
+            $table->date('endDate'); //End of date
             $table->Integer('price'); //travel price
             $table->Integer('maxNum'); //Maximum number of candidates
             $table->timestamps();
