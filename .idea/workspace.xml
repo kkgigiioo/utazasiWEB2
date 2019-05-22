@@ -249,6 +249,68 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utazasiWEB2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utazasiWEB2" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
